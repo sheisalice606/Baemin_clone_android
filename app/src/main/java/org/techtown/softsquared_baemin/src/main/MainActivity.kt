@@ -5,8 +5,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseActivity
 import org.techtown.softsquared_baemin.databinding.ActivityMainBinding
+import org.techtown.softsquared_baemin.src.main.MyPageFragment
 import org.techtown.softsquared_baemin.src.main.home.HomeFragment
-import org.techtown.softsquared_baemin.src.main.myPage.MyPageFragment
+import org.techtown.softsquared_baemin.src.main.myHistory.HistoryFragment
+import org.techtown.softsquared_baemin.src.main.myLove.LoveFragment
+import org.techtown.softsquared_baemin.src.main.mySearch.SearchFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 

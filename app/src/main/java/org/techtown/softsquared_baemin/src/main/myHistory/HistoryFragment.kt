@@ -1,4 +1,4 @@
-package org.techtown.softsquared_baemin.src.main.myPage
+package org.techtown.softsquared_baemin.src.main.myHistory
 
 import android.os.Bundle
 import android.view.View

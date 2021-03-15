@@ -1,8 +1,8 @@
-package org.techtown.softsquared_baemin.src.main.myPage
+package org.techtown.softsquared_baemin.src.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.fragment_my_page.*
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseFragment
 import org.techtown.softsquared_baemin.databinding.FragmentMyPageBinding
@@ -10,6 +10,8 @@ import org.techtown.softsquared_baemin.src.main.adapter.MyPageAdapter1
 import org.techtown.softsquared_baemin.src.main.adapter.MyPageAdapter2
 import org.techtown.softsquared_baemin.src.main.adapterData.MyPageData1
 import org.techtown.softsquared_baemin.src.main.adapterData.MyPageData2
+import org.techtown.softsquared_baemin.src.main.myPage.LogInActivity
+import org.techtown.softsquared_baemin.src.main.myPage.MainActivity
 
 class MyPageFragment :
     BaseFragment<FragmentMyPageBinding>(FragmentMyPageBinding::bind, R.layout.fragment_my_page) {
@@ -37,16 +39,19 @@ class MyPageFragment :
         items2.add(MyPageData2("현재 버전 10.23.1"))
         // 메뉴 하드코딩
 
+
         val adapter2 = MyPageAdapter2(this.requireContext(), items2)
         binding.myPageList2.adapter = adapter2
         // 두번째 리사이클러 뷰 어댑터 연결
 
 
         binding.beforeLoginMyPageImg2.setOnClickListener {
-            val fragment = LogInFragment()
-            activity?.supportFragmentManager?.beginTransaction()?.add(R.id.main_frm, fragment)?.commitAllowingStateLoss()
+
+            val intent = Intent((activity as MainActivity), LogInActivity::class.java)
+            startActivity(intent)
+
         }
-        // 로그인 하기 버튼을 누르면 로그인 화면으로 넘어간다.
+        // 로그인 하기 -> LogInActivity
 
     }
 }

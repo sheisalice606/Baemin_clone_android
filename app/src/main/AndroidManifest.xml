@@ -16,9 +16,13 @@
         tools:ignore="AllowBackup">
 
 
-        <activity android:name=".src.main.myPage.MainActivity">
+        <activity android:name=".src.main.myPage.MainActivity"/>
 
-        </activity>
+        <activity android:name=".src.main.myPage.LogInActivity"/>
+        <activity android:name=".src.main.myPage.SignUpActivity"/>
+        <activity android:name=".src.main.myPage.SignUpPhoneActivity"/>
+        <activity android:name=".src.main.myPage.SignUpEmailActivity"/>
+
 
 
         <activity android:name=".src.splash.SplashActivity">

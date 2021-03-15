@@ -8,12 +8,17 @@ import retrofit2.http.*
 
 interface HomeRetrofitInterface {
 
+
     @GET("/users")
     fun getUsers() : Call<UserResponse>
-    // 로그인 메서드 getUsers()
+    // 유저 정보 가져오기 getUsers()
+
 
     @POST("/users")
     fun postSignUp(@Body params: PostSignUpRequest): Call<SignUpResponse>
     // 회원가입 메서드 postSignUp()
+
+
+
 
 }

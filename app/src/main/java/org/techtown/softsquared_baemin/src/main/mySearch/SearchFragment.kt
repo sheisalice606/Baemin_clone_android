@@ -1,13 +1,13 @@
-package org.techtown.softsquared_baemin.src.main.myPage
+package org.techtown.softsquared_baemin.src.main.mySearch
 
 import android.os.Bundle
 import android.view.View
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseFragment
-import org.techtown.softsquared_baemin.databinding.FragmentLoveBinding
+import org.techtown.softsquared_baemin.databinding.FragmentSearchBinding
 
-class LoveFragment :
-    BaseFragment<FragmentLoveBinding>(FragmentLoveBinding::bind, R.layout.fragment_love){
+class SearchFragment :
+    BaseFragment<FragmentSearchBinding>(FragmentSearchBinding::bind, R.layout.fragment_search) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }

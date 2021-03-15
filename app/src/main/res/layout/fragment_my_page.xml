@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".src.main.myPage.MyPageFragment">
+    tools:context=".src.main.MyPageFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_my_page"
@@ -16,10 +16,10 @@
             android:id="@+id/toolbar_my_page_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:layout_gravity="center"
             android:text="My배민"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
@@ -47,14 +47,14 @@
             <ImageView
                 android:id="@+id/before_login_my_page_img_1"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="120dp"
                 android:src="@drawable/before_login_my_page_img_1"
                 android:scaleType="fitXY"/>
 
             <ImageView
                 android:id="@+id/before_login_my_page_img_2"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="90dp"
                 android:src="@drawable/before_login_my_page_img_2"
                 android:scaleType="fitXY"/>
 
