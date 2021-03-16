@@ -1,14 +1,16 @@
-package org.techtown.softsquared_baemin.src.main.mySearch
+package org.techtown.softsquared_baemin.src.main.myHome
 
 import android.os.Bundle
 import android.view.View
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseFragment
-import org.techtown.softsquared_baemin.databinding.FragmentSearchBinding
+import org.techtown.softsquared_baemin.databinding.FragmentMyHomeFrmBinding
 
-class SearchFragment :
-    BaseFragment<FragmentSearchBinding>(FragmentSearchBinding::bind, R.layout.fragment_search) {
+class MyHomeFrmFragment
+    : BaseFragment<FragmentMyHomeFrmBinding>(FragmentMyHomeFrmBinding::bind, R.layout.fragment_my_home_frm) {
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
+
 }

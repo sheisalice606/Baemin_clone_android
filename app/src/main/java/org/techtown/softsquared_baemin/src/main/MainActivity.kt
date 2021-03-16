@@ -9,7 +9,7 @@ import org.techtown.softsquared_baemin.src.main.MyHomeFragment
 import org.techtown.softsquared_baemin.src.main.MyPageFragment
 import org.techtown.softsquared_baemin.src.main.HistoryFragment
 import org.techtown.softsquared_baemin.src.main.LoveFragment
-import org.techtown.softsquared_baemin.src.main.mySearch.SearchFragment
+import org.techtown.softsquared_baemin.src.main.SearchFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 

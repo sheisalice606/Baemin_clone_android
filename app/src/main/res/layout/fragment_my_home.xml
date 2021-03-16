@@ -59,7 +59,7 @@
     </com.google.android.material.tabs.TabLayout>
 
    <FrameLayout
-       android:id="@+id/fragment_my_home_tab_frm"
+       android:id="@+id/fragment_my_home_frm"
        android:layout_width="match_parent"
        android:layout_height="match_parent"/>
 

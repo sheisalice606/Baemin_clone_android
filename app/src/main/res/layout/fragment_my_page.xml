@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".src.main.MyPageFragment">
 
-    <androidx.appcompat.widget.Toolbar
+    <RelativeLayout
         android:id="@+id/toolbar_my_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,13 +17,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:text="My배민"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
-    </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/ns_my_page"
