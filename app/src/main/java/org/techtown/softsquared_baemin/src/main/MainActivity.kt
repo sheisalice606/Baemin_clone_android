@@ -5,10 +5,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseActivity
 import org.techtown.softsquared_baemin.databinding.ActivityMainBinding
+import org.techtown.softsquared_baemin.src.main.MyHomeFragment
 import org.techtown.softsquared_baemin.src.main.MyPageFragment
-import org.techtown.softsquared_baemin.src.main.home.HomeFragment
-import org.techtown.softsquared_baemin.src.main.myHistory.HistoryFragment
-import org.techtown.softsquared_baemin.src.main.myLove.LoveFragment
+import org.techtown.softsquared_baemin.src.main.HistoryFragment
+import org.techtown.softsquared_baemin.src.main.LoveFragment
 import org.techtown.softsquared_baemin.src.main.mySearch.SearchFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
@@ -16,7 +16,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
+        supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyHomeFragment()).commitAllowingStateLoss()
 
         binding.mainBtmNav.setOnNavigationItemSelectedListener(
             BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -24,7 +24,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
 
                     R.id.menu_main_btm_nav_home -> {
                         supportFragmentManager.beginTransaction()
-                            .replace(R.id.main_frm, HomeFragment())
+                            .replace(R.id.main_frm, MyHomeFragment())
                             .commitAllowingStateLoss()
                         return@OnNavigationItemSelectedListener true
                     }

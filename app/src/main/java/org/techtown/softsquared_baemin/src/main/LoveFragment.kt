@@ -1,13 +1,13 @@
-package org.techtown.softsquared_baemin.src.main.myHistory
+package org.techtown.softsquared_baemin.src.main
 
 import android.os.Bundle
 import android.view.View
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseFragment
-import org.techtown.softsquared_baemin.databinding.FragmentHistoryBinding
+import org.techtown.softsquared_baemin.databinding.FragmentLoveBinding
 
-class HistoryFragment :
-    BaseFragment<FragmentHistoryBinding>(FragmentHistoryBinding::bind, R.layout.fragment_history){
+class LoveFragment :
+    BaseFragment<FragmentLoveBinding>(FragmentLoveBinding::bind, R.layout.fragment_love){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }

@@ -242,7 +242,7 @@
             android:id="@+id/activity_sign_up_next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/frgment_sign_up_next_button_unchecked"
+            android:background="@drawable/activity_sign_up_next_button_unchecked"
             android:text="다음으로"
             android:textSize="30sp"
             android:textColor="@color/white"/>

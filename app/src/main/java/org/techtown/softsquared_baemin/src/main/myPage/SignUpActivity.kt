@@ -35,7 +35,7 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding
                 binding.activitySignUpCheck3.isChecked = true
                 binding.activitySignUpCheck4.isChecked = true
                 binding.activitySignUpCheck5.isChecked = true
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_checked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_checked))
                 next_state = true
             }else {
                 binding.activitySignUpCheck1.isChecked = false
@@ -43,7 +43,7 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding
                 binding.activitySignUpCheck3.isChecked = false
                 binding.activitySignUpCheck4.isChecked = false
                 binding.activitySignUpCheck5.isChecked = false
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_unchecked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_unchecked))
                 next_state = false
             }
 
@@ -56,11 +56,11 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding
                     && binding.activitySignUpCheck2.isChecked
                     && binding.activitySignUpCheck3.isChecked) { // 필수약관 전체 동의상태
 
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_checked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_checked))
                 next_state = true
 
             } else {
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_unchecked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_unchecked))
                 next_state = false
             }
 
@@ -80,10 +80,10 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding
                     && binding.activitySignUpCheck2.isChecked
                     && binding.activitySignUpCheck3.isChecked) { // 필수약관 전체 동의상태
 
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_checked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_checked))
                 next_state = true
             } else {
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_unchecked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_unchecked))
                 next_state = false
             }
 
@@ -102,10 +102,10 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding
                     && binding.activitySignUpCheck2.isChecked
                     && binding.activitySignUpCheck3.isChecked) { // 필수약관 전체 동의상태
 
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_checked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_checked))
                 next_state = true
             } else {
-                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.frgment_sign_up_next_button_unchecked))
+                binding.activitySignUpNext.setBackgroundDrawable(resources.getDrawable(R.drawable.activity_sign_up_next_button_unchecked))
                 next_state = false
             }
 
