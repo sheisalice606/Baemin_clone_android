@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".src.main.MyPageFragment">
+    tools:context=".src.main.myPage.MyPageFragment">
 
     <RelativeLayout
         android:id="@+id/toolbar_my_page"
@@ -19,11 +19,16 @@
             android:layout_margin="10dp"
             android:layout_centerInParent="true"
             android:text="My배민"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
     </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/ns_my_page"
@@ -38,10 +43,10 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#CCCCCC"/>
+                android:background="#E4E3E3"/>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_height="10dp"
                 android:background="#EDEDED"/>
 
             <ImageView
@@ -54,81 +59,134 @@
             <ImageView
                 android:id="@+id/before_login_my_page_img_2"
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:src="@drawable/before_login_my_page_img_2"
-                android:scaleType="fitXY"/>
+                android:layout_height="80dp"
+                android:src="@drawable/before_login_my_page_img_2"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#CCCCCC"/>
+                android:background="#ECECEC"/>
 
 
-            <TableLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:shrinkColumns="*">
-                <TableRow>
+                android:layout_height="170dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
 
                     <ImageView
-                        android:layout_height="100dp"
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/my_page_menu_point"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/my_page_menu_point"
+                        android:scaleType="fitXY"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ECECEC"/>
 
                     <ImageView
-                        android:layout_height="100dp"
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/my_page_menu_cupon"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/my_page_menu_cupon"
+                        android:scaleType="fitXY"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ECECEC"/>
 
                     <ImageView
-                        android:layout_height="100dp"
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/my_page_menu_present"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/my_page_menu_present"
+                        android:scaleType="fitXY"/>
 
-                </TableRow>
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#CCCCCC"/>
+                    android:background="#ECECEC"/>
 
-                <TableRow>
-
-                    <ImageView
-                        android:layout_height="100dp"
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/my_page_menu_love"/>
-
-                    <ImageView
-                        android:layout_height="100dp"
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/my_page_menu_history"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_height="100dp"
-                        android:layout_width="wrap_content"
-                        android:src="@drawable/my_page_menu_review"/>
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/my_page_menu_love"
+                        android:scaleType="fitXY"/>
 
-                </TableRow>
-            </TableLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ECECEC"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/my_page_menu_history"
+                        android:scaleType="fitXY"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ECECEC"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/my_page_menu_review"
+                        android:scaleType="fitXY"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
 
 
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_height="10dp"
                 android:background="#EDEDED"/>
 
             <ImageView
                 android:id="@+id/my_page_menu_green"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/my_page_menu_green" />
+                android:layout_height="70dp"
+                android:src="@drawable/my_page_menu_green"/>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_height="10dp"
                 android:background="#EDEDED"/>
+
+
+
+
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/my_page_list_1"
@@ -147,7 +205,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#CCCCCC"
+                android:background="#ECEAEA"
                 android:orientation="vertical">
 
                 <TextView

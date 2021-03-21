@@ -39,6 +39,7 @@ class HomeService(val view: HomeFragmentView) {
 
         homeRetrofitInterface.postSignUp(postSignUpRequest).enqueue(object : Callback<SignUpResponse>{
 
+
             override fun onResponse(call: Call<SignUpResponse>, response: Response<SignUpResponse>) {
                 // 통신에 성공한 상황
                 view.onPostSignUpSuccess(response.body() as SignUpResponse)
@@ -48,6 +49,7 @@ class HomeService(val view: HomeFragmentView) {
                 // 통신 오류가 난 상황
                 view.onPostSignUpFailure(t.message ?: "통신 오류")
             }
+
         })
 
     }

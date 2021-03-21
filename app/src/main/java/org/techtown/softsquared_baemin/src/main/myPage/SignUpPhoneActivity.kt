@@ -56,6 +56,8 @@ class SignUpPhoneActivity : BaseActivity<ActivitySignUpPhoneBinding>(ActivitySig
         binding.activitySignUpPhoneNext.setOnClickListener { // 확인 버튼
             if(Input_state) {
                 val intent = Intent(applicationContext, SignUpEmailActivity::class.java)
+                intent.putExtra("phoneNumber", binding.activitySignUpPhoneInputNumber.text.toString())
+                // 회원 전화번호 정보를 intent로 넘긴다.
                 startActivity(intent)
             }
         }

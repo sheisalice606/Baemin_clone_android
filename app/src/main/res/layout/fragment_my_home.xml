@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -16,8 +16,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_centerInParent="true"
-            android:text="주소를 입력받는다."
-            android:textSize="20sp"
+            android:text="OO구 OOO로 OO-O"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
@@ -44,7 +44,12 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/fragment_my_home_tab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/tab_text_my_home_delivery"
+        app:tabIndicatorColor="#00BCD4"
+        app:tabIndicatorHeight="5dp"
+        app:tabSelectedTextColor="#00BCD4"
+        app:tabTextColor="@color/black">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -58,10 +63,12 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-   <FrameLayout
-       android:id="@+id/fragment_my_home_frm"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_my_home_frm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 
 </LinearLayout>

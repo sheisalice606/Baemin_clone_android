@@ -12,24 +12,34 @@ import java.util.concurrent.TimeUnit
 
 // 앱이 실행될때 1번만 실행이 됩니다.
 class ApplicationClass : Application() {
+
     val API_URL = "https://members.softsquared.com/"
+    // 템플릿 예시 회원가입 URL
 
-    // 테스트 서버 주소
-    // val API_URL = "http://dev-api.test.com/"
+    val SIGN_UP_URL = "https://dev.gamsung-coding.shop/"
+    // 모의외주 어플 회원가입 URL
 
-    // 실 서버 주소
-    // val API_URL = "http://api.test.com/"
 
     // 코틀린의 전역변수 문법
     companion object {
         // 만들어져있는 SharedPreferences 를 사용해야합니다. 재생성하지 않도록 유념해주세요
         lateinit var sSharedPreferences: SharedPreferences
 
+        // 로그인 되어있는 상태인가 아닌가
+        var log_in_state = false
+
         // JWT Token Header 키 값
         val X_ACCESS_TOKEN = "X-ACCESS-TOKEN"
 
+
         // Retrofit 인스턴스, 앱 실행시 한번만 생성하여 사용합니다.
         lateinit var sRetrofit: Retrofit
+
+
+        lateinit var sign_up_Retrofit : Retrofit // 회원가입
+        var duplicate_email_check : Boolean = false // 이메일 중복체크
+        var duplicate_phone_number_check : Boolean = false // 전화번호 중복체크
+
     }
 
     // 앱이 처음 생성되는 순간, SP를 새로 만들어주고, 레트로핏 인스턴스를 생성합니다.
@@ -40,6 +50,7 @@ class ApplicationClass : Application() {
         // 레트로핏 인스턴스 생성
         initRetrofitInstance()
     }
+
 
     // 레트로핏 인스턴스를 생성하고, 레트로핏에 각종 설정값들을 지정해줍니다.
     // 연결 타임아웃시간은 5초로 지정이 되어있고, HttpLoggingInterceptor를 붙여서 어떤 요청이 나가고 들어오는지를 보여줍니다.
@@ -60,5 +71,16 @@ class ApplicationClass : Application() {
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+        // 예시 회원가입 API 용 retrofit
+
+        sign_up_Retrofit = Retrofit.Builder()
+                .baseUrl(SIGN_UP_URL)
+                .client(client)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+        // 회원가입 API 용 retrofit
+
     }
+
+
 }

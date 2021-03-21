@@ -8,18 +8,19 @@
 
     <ImageView
         android:id="@+id/activity_login_back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"/>
 
     <EditText
         android:id="@+id/activity_login_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:textSize="14sp"
         android:hint="아이디 또는 이메일"/>
 
     <EditText
@@ -29,6 +30,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:textSize="14sp"
         android:hint="비밀번호"/>
 
     <Button
@@ -42,10 +44,10 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="#6DC1B9"/>
+        android:background="#03BCAA"/>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="아이디 찾기"
-            android:textSize="20sp"/>
+            android:textSize="13sp"/>
 
         <View
             android:layout_width="1dp"
@@ -70,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="비밀번호 찾기"
-            android:textSize="20sp"/>
+            android:textSize="13sp"/>
 
     </LinearLayout>
 

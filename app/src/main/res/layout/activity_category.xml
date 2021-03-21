@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/activity_category_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back_button_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:text="EXAMPLE"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/activity_category_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/tab_text_category"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicatorColor="@color/black"
+        app:tabMode="scrollable">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한식" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분식" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돈까스·회·일식" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="치킨" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="피자" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아시안·양식" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중식" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="족발·보쌈" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="야식" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="찜·탕" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도시락" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카페·디저트" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="패스트푸드" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/activity_category_delivery_speed_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="배달 빠른 순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/activity_category_delivery_tip_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="배달팁 낮은 순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/activity_category_basic_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="기본순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/activity_category_most_ordered_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="주문 많은 순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/activity_category_high_star_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="별점 높은 순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/activity_category_close_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="가까운 순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/activity_category_most_loved_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="8dp"
+                android:background="@drawable/activity_category_priority_button_unselected_custom"
+                android:text="찜 많은 순"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/activity_category_frm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

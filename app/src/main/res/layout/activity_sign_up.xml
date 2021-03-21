@@ -16,15 +16,15 @@
             android:id="@+id/activity_sign_up_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="10dp"
-            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+            android:layout_margin="15dp"
+            android:src="@drawable/back_button_icon"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="회원가입"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_centerInParent="true"/>
@@ -49,6 +49,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginStart="15dp"
                 android:text="어서오세요\n약관동의가 필요해요"
+                android:textStyle="bold"
                 android:textColor="@color/black"
                 android:textSize="20sp"/>
 
@@ -59,9 +60,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:button="@drawable/custom_checkbox_1"
-                android:paddingLeft="15dp"
+                android:paddingLeft="5dp"
                 android:text="전체 동의"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:textStyle="bold"/>
 
 
@@ -88,9 +89,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:button="@drawable/custom_checkbox_1"
-                    android:paddingLeft="15dp"
+                    android:paddingLeft="5dp"
                     android:text="배달의민족 이용약관 동의"
-                    android:textSize="17sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/activity_sign_up_check_1_arrow"
@@ -113,9 +114,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:button="@drawable/custom_checkbox_1"
-                    android:paddingLeft="15dp"
+                    android:paddingLeft="5dp"
                     android:text="전자금융거래 이용약관 동의"
-                    android:textSize="17sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/activity_sign_up_check_2_arrow"
@@ -138,9 +139,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:button="@drawable/custom_checkbox_1"
-                    android:paddingLeft="15dp"
+                    android:paddingLeft="5dp"
                     android:text="개인정보 수집이용 동의"
-                    android:textSize="17sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/activity_sign_up_check_3_arrow"
@@ -163,9 +164,9 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:button="@drawable/custom_checkbox_1"
-                    android:paddingLeft="15dp"
+                    android:paddingLeft="5dp"
                     android:text="개인정보 제3자 제공 동의 (선택)"
-                    android:textSize="17sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/activity_sign_up_check_4_arrow"
@@ -182,9 +183,21 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:button="@drawable/custom_checkbox_1"
-                android:paddingLeft="15dp"
+                android:paddingLeft="5dp"
                 android:text="마케팅 정보 메일, SMS 수신동의 (선택)"
-                android:textSize="17sp"/>
+                android:textSize="15sp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
 
 
 
@@ -199,10 +212,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
                     android:button="@drawable/custom_radiobutton_1"
                     android:background="#ECECEC"
                     android:text="14세 이상입니다."
                     android:textSize="15sp"
+                    android:textStyle="bold"
                     android:textColor="@color/black"/>
 
 
@@ -219,14 +235,18 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginBottom="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
                     android:button="@drawable/custom_radiobutton_1"
                     android:background="#ECECEC"
                     android:text="14세 미만입니다."
                     android:textSize="15sp"
+                    android:textStyle="bold"
                     android:textColor="@color/black"/>
 
 
             </RadioGroup>
+
 
 
 
@@ -242,6 +262,9 @@
             android:id="@+id/activity_sign_up_next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/activity_sign_up_next_button_unchecked"
             android:text="다음으로"
             android:textSize="30sp"

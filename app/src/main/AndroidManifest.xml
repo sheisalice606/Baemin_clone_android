@@ -22,6 +22,7 @@
         <activity android:name=".src.main.myPage.SignUpActivity"/>
         <activity android:name=".src.main.myPage.SignUpPhoneActivity"/>
         <activity android:name=".src.main.myPage.SignUpEmailActivity"/>
+        <activity android:name=".src.main.category.CategoryActivity"/>
 
 
 

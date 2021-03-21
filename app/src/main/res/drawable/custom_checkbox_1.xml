@@ -3,12 +3,12 @@
 
     <!-- 체크박스 해제 상태 -->
     <item android:state_checked="false"
-        android:drawable="@drawable/check_box_unchecked"/>
+        android:drawable="@drawable/check_box_unchecked_size_down"/>
 
 
     <!-- 체크박스 선택 상태 -->
     <item android:state_checked="true"
-        android:drawable="@drawable/check_box_checked"/>
+        android:drawable="@drawable/check_box_checked_size_down"/>
 
 
 </selector>
