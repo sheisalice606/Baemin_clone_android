@@ -6,8 +6,8 @@ import android.view.View
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseFragment
 import org.techtown.softsquared_baemin.databinding.FragmentMyHomeFrmDeliveryBinding
+import org.techtown.softsquared_baemin.src.main.MainActivity
 import org.techtown.softsquared_baemin.src.main.category.CategoryActivity
-import org.techtown.softsquared_baemin.src.main.myPage.MainActivity
 
 class MyHomeFrmDeliveryFragment
     : BaseFragment<FragmentMyHomeFrmDeliveryBinding>(FragmentMyHomeFrmDeliveryBinding::bind, R.layout.fragment_my_home_frm_delivery) {

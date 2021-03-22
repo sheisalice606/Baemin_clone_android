@@ -34,6 +34,7 @@
             android:layout_alignBottom="@+id/activity_sign_up_email_back"
             android:layout_marginEnd="20dp"
             android:textSize="15sp"
+            android:textColor="@color/grey"
             android:text="완료"/>
 
     </RelativeLayout>
@@ -55,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
-            android:hint="이메일을 입력해주세요.          "
+            android:hint="이메일을 입력해주세요."
             android:inputType="textEmailAddress"
             android:textSize="15sp"
             android:layout_marginStart="20dp"/>
@@ -73,12 +74,102 @@
 
     </RelativeLayout>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="닉네임"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
     <FrameLayout
-        android:id="@+id/activity_sign_up_email_sub"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/activity_sign_up_nickname_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="14sp"
+            android:hint="2-10자로 입력해주세요."/>
 
 
+        <ImageView
+            android:id="@+id/activity_sign_up_nickname_check"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center_vertical|right"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="비밀번호"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/activity_sign_up_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:hint="비밀번호를 입력해주세요."/>
+
+
+        <ImageView
+            android:id="@+id/activity_sign_up_password_check"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center_vertical|right"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="생년월일"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/activity_sign_up_birth_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="14sp"
+            android:hint="예) 2000.01.01"/>
+
+
+        <ImageView
+            android:id="@+id/activity_sign_up_birth_check"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center_vertical|right"/>
 
     </FrameLayout>
 

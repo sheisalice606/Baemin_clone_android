@@ -16,17 +16,14 @@ class ApplicationClass : Application() {
     val API_URL = "https://members.softsquared.com/"
     // 템플릿 예시 회원가입 URL
 
-    val SIGN_UP_URL = "https://dev.gamsung-coding.shop/"
-    // 모의외주 어플 회원가입 URL
+    val BAEMIN_URL = "https://dev.gamsung-coding.shop/"
+    // 모의외주 URL
 
 
     // 코틀린의 전역변수 문법
     companion object {
         // 만들어져있는 SharedPreferences 를 사용해야합니다. 재생성하지 않도록 유념해주세요
         lateinit var sSharedPreferences: SharedPreferences
-
-        // 로그인 되어있는 상태인가 아닌가
-        var log_in_state = false
 
         // JWT Token Header 키 값
         val X_ACCESS_TOKEN = "X-ACCESS-TOKEN"
@@ -35,18 +32,25 @@ class ApplicationClass : Application() {
         // Retrofit 인스턴스, 앱 실행시 한번만 생성하여 사용합니다.
         lateinit var sRetrofit: Retrofit
 
+        // 모의외주에서 사용하는 Retrofit 인스턴스
+        lateinit var mRetrofit : Retrofit
 
-        lateinit var sign_up_Retrofit : Retrofit // 회원가입
-        var duplicate_email_check : Boolean = false // 이메일 중복체크
-        var duplicate_phone_number_check : Boolean = false // 전화번호 중복체크
+
+        var email_check = false
+        var password_check = false
+        var nickname_check = false
+        var birth_check = false
+        var sign_up_available = false
 
     }
 
     // 앱이 처음 생성되는 순간, SP를 새로 만들어주고, 레트로핏 인스턴스를 생성합니다.
     override fun onCreate() {
         super.onCreate()
+
         sSharedPreferences =
-            applicationContext.getSharedPreferences("SOFTSQUARED_TEMPLATE_APP", MODE_PRIVATE)
+                applicationContext.getSharedPreferences("SOFTSQUARED_TEMPLATE_APP", MODE_PRIVATE)
+
         // 레트로핏 인스턴스 생성
         initRetrofitInstance()
     }
@@ -73,12 +77,12 @@ class ApplicationClass : Application() {
             .build()
         // 예시 회원가입 API 용 retrofit
 
-        sign_up_Retrofit = Retrofit.Builder()
-                .baseUrl(SIGN_UP_URL)
+
+        mRetrofit = Retrofit.Builder()
+                .baseUrl(BAEMIN_URL)
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-        // 회원가입 API 용 retrofit
 
     }
 

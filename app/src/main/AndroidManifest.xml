@@ -16,12 +16,12 @@
         tools:ignore="AllowBackup">
 
 
-        <activity android:name=".src.main.myPage.MainActivity"/>
-
-        <activity android:name=".src.main.myPage.LogInActivity"/>
-        <activity android:name=".src.main.myPage.SignUpActivity"/>
-        <activity android:name=".src.main.myPage.SignUpPhoneActivity"/>
-        <activity android:name=".src.main.myPage.SignUpEmailActivity"/>
+        <activity android:name=".src.main.MainActivity"/>
+        <activity android:name=".src.main.myPage.myProfile.MyProfileActivity"/>
+        <activity android:name=".src.main.myPage.logIn.LogInActivity"/>
+        <activity android:name=".src.main.myPage.signUp.SignUpActivity"/>
+        <activity android:name=".src.main.myPage.signUp.SignUpPhoneActivity"/>
+        <activity android:name=".src.main.myPage.signUp.SignUpEmailActivity"/>
         <activity android:name=".src.main.category.CategoryActivity"/>
 
 

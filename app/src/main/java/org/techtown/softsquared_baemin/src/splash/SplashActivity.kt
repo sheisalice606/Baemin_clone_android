@@ -6,7 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import org.techtown.softsquared_baemin.config.BaseActivity
 import org.techtown.softsquared_baemin.databinding.ActivitySplashBinding
-import org.techtown.softsquared_baemin.src.main.myPage.MainActivity
+import org.techtown.softsquared_baemin.src.main.MainActivity
 
 class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding::inflate) {
     override fun onCreate(savedInstanceState: Bundle?) {
