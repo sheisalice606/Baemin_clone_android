@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_centerInParent="true"
-            android:text="OO구 OOO로 OO-O"
+            android:text="고양시 덕양구 덕수천2로 150"
             android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>

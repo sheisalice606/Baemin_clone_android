@@ -79,8 +79,8 @@ class MyProfileActivity : BaseActivity<ActivityMyProfileBinding>(ActivityMyProfi
             password = binding.activityMyProfileUserPassword.text.toString()
 
 
-            //val userDataEditRequest = UserDataEditRequest(nickname, password)
-            //UserDataEditService(this).tryUserDataEdit(userDataEditRequest)
+            val userDataEditRequest = UserDataEditRequest(nickname, password)
+            UserDataEditService(this).tryUserDataEdit(userDataEditRequest)
 
         }
     }

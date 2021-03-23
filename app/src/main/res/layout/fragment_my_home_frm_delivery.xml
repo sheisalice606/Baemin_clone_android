@@ -66,7 +66,7 @@
 
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_1"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_show"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -95,7 +95,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_2"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_present"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -124,7 +124,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_3"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_take_out"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -153,7 +153,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_4"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_myself"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -182,7 +182,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_5"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_korea"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -222,7 +222,7 @@
 
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_6"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_snack"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -251,7 +251,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_7"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_cafe"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -280,7 +280,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_8"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_japan"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -309,7 +309,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_9"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_chicken"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -338,7 +338,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_10"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_pizza"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -377,7 +377,7 @@
 
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_11"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_asian"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -406,7 +406,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_12"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_china"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -435,7 +435,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_13"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_pork"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -464,7 +464,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_14"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_night"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -493,7 +493,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_15"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_steamed"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -532,7 +532,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_16"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_lunch_box"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -561,7 +561,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_17"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_fast_food"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -590,7 +590,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_18"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_brand"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -619,7 +619,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_19"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_ranking"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -648,7 +648,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/fragment_my_home_frm_delivery_category_20"
+                        android:id="@+id/fragment_my_home_frm_delivery_category_country"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

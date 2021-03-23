@@ -1,6 +1,7 @@
 package org.techtown.softsquared_baemin.src.main.myPage.myProfile.userDataEditModels
 
 import org.techtown.softsquared_baemin.config.ApplicationClass
+import android.util.Log
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -14,7 +15,8 @@ class UserDataEditService(val view : UserDataEditView) {
         userDataEditRetrofitInterface.userDataEdit(userDataEditRequest).enqueue(object : Callback<UserDataEditResponse> {
 
             override fun onResponse(call: Call<UserDataEditResponse>, response: Response<UserDataEditResponse>) {
-                view.onUserDataEditSuccess(response.body() as UserDataEditResponse)
+                Log.d("Hello", response.body().toString())
+                //view.onUserDataEditSuccess(response.body() as UserDataEditResponse)
             }
 
             override fun onFailure(call: Call<UserDataEditResponse>, t: Throwable) {
