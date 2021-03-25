@@ -55,7 +55,7 @@
                 android:layout_height="250dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:background="@drawable/fragment_my_home_frm_delivery_menu_background_pattern"
+                android:background="@drawable/baemin_pager_background"
                 android:orientation="vertical">
 
                 <LinearLayout

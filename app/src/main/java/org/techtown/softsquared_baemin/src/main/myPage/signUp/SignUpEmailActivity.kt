@@ -56,7 +56,7 @@ class SignUpEmailActivity :
                 if(len in 2..10) {
 
                     nickname_check = true
-                    binding.activitySignUpNicknameCheck.setImageResource(R.drawable.check_box_checked)
+                    binding.activitySignUpNicknameCheck.setImageResource(R.drawable.sign_up_format_checked)
 
                     if(email_check && nickname_check && password_check && birth_check) {
                         binding.activitySignUpEmailNext.setTextColor(getColorStateList(R.color.black))
@@ -85,7 +85,7 @@ class SignUpEmailActivity :
                 password = s.toString()
                 if(s.toString().isNotEmpty()) {
                     password_check = true
-                    binding.activitySignUpPasswordCheck.setImageResource(R.drawable.check_box_checked)
+                    binding.activitySignUpPasswordCheck.setImageResource(R.drawable.sign_up_format_checked)
 
                     if(email_check && nickname_check && password_check && birth_check) {
                         binding.activitySignUpEmailNext.setTextColor(getColorStateList(R.color.black))
@@ -115,7 +115,7 @@ class SignUpEmailActivity :
                 if(s.toString().isNotEmpty()) {
 
                     birth_check = true
-                    binding.activitySignUpBirthCheck.setImageResource(R.drawable.check_box_checked)
+                    binding.activitySignUpBirthCheck.setImageResource(R.drawable.sign_up_format_checked)
 
                     if(email_check && nickname_check && password_check && birth_check) {
                         binding.activitySignUpEmailNext.setTextColor(getColorStateList(R.color.black))
@@ -124,7 +124,7 @@ class SignUpEmailActivity :
 
                 }
                 else {
-                    password_check = false
+                    birth_check = false
                     sign_up_available = false
                     binding.activitySignUpEmailNext.setTextColor(getColorStateList(R.color.grey))
                     binding.activitySignUpBirthCheck.setImageResource(0)
@@ -182,8 +182,8 @@ class SignUpEmailActivity :
         if(responsePost.isSuccess) {
             showCustomToast("사용 가능한 이메일입니다.")
             email_check = true
-            binding.activitySignUpEmailTest.background = ContextCompat.getDrawable(this, R.drawable.activity_sign_up_email_test_button)
-            binding.activitySignUpEmailTest.setTextColor(resources.getColorStateList(R.color.grey))
+            binding.activitySignUpEmailTest.background = ContextCompat.getDrawable(applicationContext, R.drawable.activity_sign_up_email_test_button)
+            binding.activitySignUpEmailTest.setTextColor(getColorStateList(R.color.grey))
 
             if(email_check && nickname_check && password_check && birth_check) {
                 binding.activitySignUpEmailNext.setTextColor(getColorStateList(R.color.black))
@@ -198,8 +198,8 @@ class SignUpEmailActivity :
         else {
             email_check = false
             sign_up_available = false
-            binding.activitySignUpEmailTest.background = ContextCompat.getDrawable(this, R.drawable.activity_sign_up_email_test_button_2)
-            binding.activitySignUpEmailTest.setTextColor(resources.getColorStateList(R.color.black))
+            binding.activitySignUpEmailTest.background = ContextCompat.getDrawable(applicationContext, R.drawable.activity_sign_up_email_test_button_2)
+            binding.activitySignUpEmailTest.setTextColor(getColorStateList(R.color.black))
         }
     }
 

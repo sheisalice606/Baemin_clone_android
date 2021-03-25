@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.telephony.PhoneNumberFormattingTextWatcher
 import android.text.Editable
 import android.text.TextWatcher
+import androidx.core.content.ContextCompat
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.ApplicationClass
 import org.techtown.softsquared_baemin.config.BaseActivity
@@ -37,13 +38,19 @@ class SignUpPhoneActivity : BaseActivity<ActivitySignUpPhoneBinding>(ActivitySig
 
                 if(phone.length >= 12) {
                     Input_state = true
-                    binding.activitySignUpPhoneButton1.setImageResource(R.drawable.check_box_checked)
+                    binding.activitySignUpPhoneButton1.setImageResource(R.drawable.sign_up_format_checked)
                     binding.activitySignUpPhoneNext.setTextColor(Color.parseColor("#000000"))
+                    binding.activitySignUpPhoneFormatTest.background =
+                            ContextCompat.getDrawable(applicationContext, R.drawable.activity_sign_up_email_test_button_2)
+                    binding.activitySignUpPhoneFormatTest.setTextColor(getColorStateList(R.color.black))
                 }
                 else {
                     Input_state = false
                     binding.activitySignUpPhoneButton1.setImageResource(0)
                     binding.activitySignUpPhoneNext.setTextColor(Color.parseColor("#CCCCCC"))
+                    binding.activitySignUpPhoneFormatTest.background =
+                            ContextCompat.getDrawable(applicationContext, R.drawable.activity_sign_up_email_test_button)
+                    binding.activitySignUpPhoneFormatTest.setTextColor(getColorStateList(R.color.grey))
                 }
 
             }

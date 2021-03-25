@@ -13,6 +13,7 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding
         super.onCreate(savedInstanceState)
 
         var next_state : Boolean = false
+        binding.activitySignUpRadio1.isChecked = true
         // 다음단계 진행 가능여부
 
         binding.activitySignUpBack.setOnClickListener {

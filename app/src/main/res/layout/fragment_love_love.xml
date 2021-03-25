@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragment_history_love_love_blank"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/fragment_love_blank"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/fragment_love_love_top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자주찾는 가게를"
+        android:layout_below="@+id/fragment_history_love_love_blank"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/fragment_love_love_bot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="찜 해보세요."
+        android:layout_below="@+id/fragment_love_love_top_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

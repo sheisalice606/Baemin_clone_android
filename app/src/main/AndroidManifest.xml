@@ -17,6 +17,7 @@
 
 
         <activity android:name=".src.main.MainActivity"/>
+        <activity android:name=".src.main.menuList.MenuListActivity"/>
         <activity android:name=".src.main.myPage.myProfile.MyProfileActivity"/>
         <activity android:name=".src.main.myPage.logIn.LogInActivity"/>
         <activity android:name=".src.main.myPage.signUp.SignUpActivity"/>

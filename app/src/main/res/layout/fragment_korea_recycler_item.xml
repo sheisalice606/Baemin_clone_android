@@ -85,11 +85,19 @@
                     android:src="@drawable/category_speed_icon"/>
 
                 <TextView
-                    android:id="@+id/fragment_korea_delivery_cost_time"
+                    android:id="@+id/fragment_korea_delivery_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fragment_korea_low_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"/>
+
 
             </LinearLayout>
 
