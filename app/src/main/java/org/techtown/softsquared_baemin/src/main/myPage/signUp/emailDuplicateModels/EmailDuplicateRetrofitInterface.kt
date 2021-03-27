@@ -5,8 +5,8 @@ import retrofit2.http.*
 
 interface EmailDuplicateRetrofitInterface {
 
-    @POST("/api/v1/signUp/verify/email")
-    fun emailDuplicate(@Body params : EmailDuplicateRequest) : Call<EmailDuplicateResponse>
+    @GET("/app/users")
+    fun emailDuplicate(@Query("email") email : String) : Call<EmailDuplicateResponse>
     // 이메일 정보
 
 }

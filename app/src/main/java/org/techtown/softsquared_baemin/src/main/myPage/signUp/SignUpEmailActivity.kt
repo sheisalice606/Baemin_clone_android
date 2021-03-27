@@ -143,9 +143,7 @@ class SignUpEmailActivity :
             email = binding.activitySignUpEmailInput.text.toString()
             // 회원 Email 정보 받아옴.
 
-            val emailDuplicateRequest = EmailDuplicateRequest(email = email)
-            // EmailDuplicate 생성자.
-            EmailDuplicateService(this).tryEmailDuplicate(emailDuplicateRequest)
+            EmailDuplicateService(this).tryEmailDuplicate(email = email)
             // 받아온 Email 중복 체크.
 
         }
@@ -180,7 +178,7 @@ class SignUpEmailActivity :
 
     override fun onEmailDuplicateSuccess(responsePost: EmailDuplicateResponse) {
         if(responsePost.isSuccess) {
-            showCustomToast("사용 가능한 이메일입니다.")
+            showCustomToast(responsePost.message.toString())
             email_check = true
             binding.activitySignUpEmailTest.background = ContextCompat.getDrawable(applicationContext, R.drawable.activity_sign_up_email_test_button)
             binding.activitySignUpEmailTest.setTextColor(getColorStateList(R.color.grey))
@@ -196,6 +194,7 @@ class SignUpEmailActivity :
             // 중복 확인 통과
         }
         else {
+            showCustomToast(responsePost.message.toString())
             email_check = false
             sign_up_available = false
             binding.activitySignUpEmailTest.background = ContextCompat.getDrawable(applicationContext, R.drawable.activity_sign_up_email_test_button_2)
@@ -205,7 +204,7 @@ class SignUpEmailActivity :
 
 
     override fun onEmailDuplicateFailure(message: String) {
-        showCustomToast("중복된 이메일입니다.")
+        showCustomToast("이메일 중복 체크 실패")
     }
 
 
