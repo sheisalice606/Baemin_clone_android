@@ -1,6 +1,7 @@
 package org.techtown.softsquared_baemin.src.main.myPage.logIn.logInModels
 
 import org.techtown.softsquared_baemin.config.ApplicationClass
+import android.util.Log
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -18,6 +19,7 @@ class LogInService(val view : LogInView) {
             }
 
             override fun onFailure(call: Call<LogInResponse>, t: Throwable) {
+                Log.d("Hello", t.toString())
                 view.onLogInFailure("통신 오류")
             }
 

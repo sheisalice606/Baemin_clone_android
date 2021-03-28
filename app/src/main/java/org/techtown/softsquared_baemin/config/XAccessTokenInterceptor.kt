@@ -15,8 +15,6 @@ class XAccessTokenInterceptor : Interceptor {
         val builder: Request.Builder = chain.request().newBuilder()
 
         val jwtToken: String? = sSharedPreferences.getString(X_ACCESS_TOKEN, null)
-        // jwt 토큰이 필요없는 상황 발급받지 않는다
-
 
         if (jwtToken != null) {
             builder.addHeader("X-ACCESS-TOKEN", jwtToken)

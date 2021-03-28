@@ -5,6 +5,6 @@ import org.techtown.softsquared_baemin.config.BaseResponse
 
 data class LogInResponse(
 
-        @SerializedName("result") val result : String? = null
+        @SerializedName("result") val result : LoginResult
 
 ) : BaseResponse()

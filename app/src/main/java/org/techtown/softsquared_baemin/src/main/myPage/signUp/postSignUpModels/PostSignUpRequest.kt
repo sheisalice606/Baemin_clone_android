@@ -6,9 +6,9 @@ data class PostSignUpRequest(
 
         // 회원가입 정보
         @SerializedName("email") val email: String,
-        @SerializedName("password") val password: String,
         @SerializedName("nickname") val nickname: String,
-        @SerializedName("phoneNumber") val phoneNumber: String,
-        @SerializedName("birth") val birth: String
+        @SerializedName("password") val password: String,
+        @SerializedName("birth") val birth: String,
+        @SerializedName("tel") val tel: String
 
 )

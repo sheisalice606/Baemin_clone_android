@@ -35,14 +35,14 @@ class SignUpEmailActivity :
     var nickname : String = "nickname"
     var birth : String = "birth"
 
-    private lateinit var phoneNumber : String
+    private lateinit var tel : String
     // 회원가입 필요 정보
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        phoneNumber = sSharedPreferences.getString("signUp_phoneNumber", "blank").toString()
+        tel = sSharedPreferences.getString("signUp_phoneNumber", "blank").toString()
 
         // Nickname EditText
         binding.activitySignUpNicknameInput.addTextChangedListener(object : TextWatcher {
@@ -154,7 +154,7 @@ class SignUpEmailActivity :
         binding.activitySignUpEmailNext.setOnClickListener {
 
             if(sign_up_available) {
-                val postSignUpRequest = PostSignUpRequest(email, password, nickname, phoneNumber, birth)
+                val postSignUpRequest = PostSignUpRequest(email, nickname, password, birth, tel)
                 // 모든 회원가입 정보가 담긴 PostSignUpRequest 생성자.
                 PostSignUpService(this).tryPostSignUp(postSignUpRequest)
             }
@@ -204,7 +204,7 @@ class SignUpEmailActivity :
 
 
     override fun onEmailDuplicateFailure(message: String) {
-        showCustomToast("이메일 중복 체크 실패")
+        showCustomToast(message)
     }
 
 
@@ -213,6 +213,9 @@ class SignUpEmailActivity :
 
     override fun onPostSignUpSuccess(responsePost: PostSignUpResponse) {
         if(responsePost.isSuccess) {
+
+            showCustomToast(responsePost.message)
+            // 회원가입 성공 message
             val intent = Intent(applicationContext, MainActivity::class.java)
             // MainActivity 재 실행
 
@@ -227,7 +230,7 @@ class SignUpEmailActivity :
             editor.putString("user_email", email)
             //editor.putString("user_password", password)
             editor.putString("user_nickname", nickname)
-            editor.putString("user_phoneNumber", phoneNumber)
+            editor.putString("user_tel", tel)
             editor.putString("user_birth", birth)
             editor.apply()
 
@@ -243,8 +246,8 @@ class SignUpEmailActivity :
             finish()
         }
         else {
-            showCustomToast("회원가입 실패")
-            // 회원가입 실패 메세지
+            showCustomToast(responsePost.message)
+            // 회원가입 실패 message
         }
     }
 

@@ -13,10 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:networkSecurityConfig="@xml/network_security_config"
         tools:ignore="AllowBackup">
 
 
         <activity android:name=".src.main.MainActivity"/>
+        <activity android:name=".src.main.location.InputLocationActivity"/>
         <activity android:name=".src.main.menuList.MenuListActivity"/>
         <activity android:name=".src.main.myPage.myProfile.MyProfileActivity"/>
         <activity android:name=".src.main.myPage.logIn.LogInActivity"/>

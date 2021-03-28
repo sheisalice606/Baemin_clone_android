@@ -56,12 +56,18 @@ class LogInActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
         if(responsePost.isSuccess) {
             val editor = sSharedPreferences.edit()
             editor.putBoolean("LOGIN_STATE", true)
+            // 로그인 상황
+            editor.putString("X-ACCESS-TOKEN", responsePost.result.jwt)
+            // 토큰값을 넣어서 로그인 상태임을 확인
 
-            editor.putString("user_email", email)
-            //editor.putString("user_password", password)
-            editor.putString("user_nickname", null)
-            editor.putString("user_phoneNumber", null)
-            editor.putString("user_birth", null)
+            editor.putString("user_email", responsePost.result.user.email.toString())
+            // 로그인된 이메일값 저장
+            editor.putString("user_nickname", responsePost.result.user.nickname)
+            // 로그인된 닉네임값 저장
+            editor.putString("user_tel", responsePost.result.user.tel)
+            // 로그인된 전화번호값 저장
+            editor.putString("user_birth", responsePost.result.user.birth)
+            // 로그인된 생년월일값 저장
             editor.apply()
 
             val intent = Intent(applicationContext, MainActivity::class.java)
@@ -69,7 +75,7 @@ class LogInActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
             finish()
         }
         else{
-            showCustomToast("잘못된 회원정보입니다.")
+            showCustomToast(responsePost.message.toString())
         }
 
     }
@@ -77,7 +83,6 @@ class LogInActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
     override fun onLogInFailure(message: String) {
 
         val editor = sSharedPreferences.edit()
-        editor.putBoolean("LOGIN_STATE", false)
         editor.apply()
 
         showCustomToast(message)

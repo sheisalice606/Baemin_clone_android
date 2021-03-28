@@ -7,6 +7,8 @@ import com.google.android.material.tabs.TabLayout
 import org.techtown.softsquared_baemin.R
 import org.techtown.softsquared_baemin.config.BaseFragment
 import org.techtown.softsquared_baemin.databinding.FragmentMyHomeBinding
+import org.techtown.softsquared_baemin.src.main.MainActivity
+import org.techtown.softsquared_baemin.src.main.location.InputLocationActivity
 import org.techtown.softsquared_baemin.src.main.search.SearchFragment
 
 class MyHomeFragment :
@@ -25,6 +27,8 @@ class MyHomeFragment :
         // 기본 -> 배달 tab
 
 
+
+
         binding.fragmentMyHomeSearch.setOnClickListener {
             activity?.supportFragmentManager
                     ?.beginTransaction()
@@ -32,6 +36,15 @@ class MyHomeFragment :
                     ?.commitAllowingStateLoss()
         }
         // 돋보기버튼 -> SearchFragment 이동동
+
+
+
+
+        binding.fragmentMyHomeLocation.setOnClickListener {
+            val intent = Intent(this.requireContext(), InputLocationActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
         binding.fragmentMyHomeTab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {

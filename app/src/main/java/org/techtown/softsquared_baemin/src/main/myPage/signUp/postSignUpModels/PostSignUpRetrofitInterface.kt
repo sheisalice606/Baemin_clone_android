@@ -7,7 +7,7 @@ import retrofit2.http.*
 
 interface PostSignUpRetrofitInterface {
 
-    @POST("/api/v1/signUp")
+    @POST("/app/users/sign-up")
     fun postSignUp(@Body params : PostSignUpRequest) : Call<PostSignUpResponse>
     // 회원 가입
 

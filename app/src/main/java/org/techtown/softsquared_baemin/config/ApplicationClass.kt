@@ -16,7 +16,7 @@ class ApplicationClass : Application() {
     val API_URL = "https://members.softsquared.com/"
     // 템플릿 예시 회원가입 URL
 
-    val BAEMIN_URL = "http://dev.enudgu.shop/"
+    val BAEMIN_URL = "https://dev.enudgu.shop/"
     // 모의외주 URL
 
 

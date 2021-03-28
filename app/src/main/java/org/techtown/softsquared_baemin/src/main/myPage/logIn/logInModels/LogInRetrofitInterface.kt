@@ -6,8 +6,7 @@ import retrofit2.http.POST
 
 interface LogInRetrofitInterface {
 
-    @POST("api/v1/login")
+    @POST("app/users/login")
     fun logIn(@Body params : LogInRequest) : Call<LogInResponse>
-
 
 }

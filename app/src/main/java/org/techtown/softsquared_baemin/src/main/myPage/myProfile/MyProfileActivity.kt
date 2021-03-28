@@ -34,9 +34,10 @@ class MyProfileActivity : BaseActivity<ActivityMyProfileBinding>(ActivityMyProfi
             val editor = sSharedPreferences.edit()
             editor.putBoolean("LOGIN_STATE", false)
             // 로그아웃 상태 전환
+            editor.putString("X-ACCESS-TOKEN", null)
+            // JWT 토큰 초기화
 
             editor.putString("user_email", null)
-            //editor.putString("user_password", null)
             editor.putString("user_nickname", null)
             editor.putString("user_phoneNumber", null)
             editor.putString("user_birth", null)
@@ -64,7 +65,7 @@ class MyProfileActivity : BaseActivity<ActivityMyProfileBinding>(ActivityMyProfi
 
 
         // 전화번호 표기
-        val userPhoneNumber = sSharedPreferences.getString("user_phoneNumber", "blank")
+        val userPhoneNumber = sSharedPreferences.getString("user_tel", "blank")
         if(userPhoneNumber != "blank") {
             binding.activityMyProfileUserPhoneNumber1.text = userPhoneNumber?.substring(0..2)
             binding.activityMyProfileUserPhoneNumber2.text = userPhoneNumber?.substring(4..7)
