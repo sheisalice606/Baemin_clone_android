@@ -19,7 +19,6 @@ class LogInService(val view : LogInView) {
             }
 
             override fun onFailure(call: Call<LogInResponse>, t: Throwable) {
-                Log.d("Hello", t.toString())
                 view.onLogInFailure("통신 오류")
             }
 

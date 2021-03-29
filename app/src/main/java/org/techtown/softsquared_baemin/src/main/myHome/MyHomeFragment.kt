@@ -19,7 +19,6 @@ class MyHomeFragment :
 
 
 
-
         activity?.supportFragmentManager
                 ?.beginTransaction()
                 ?.replace(R.id.fragment_my_home_frm, MyHomeFrmDeliveryFragment())

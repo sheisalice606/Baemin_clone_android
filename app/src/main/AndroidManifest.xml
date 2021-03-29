@@ -4,6 +4,7 @@
     package="org.techtown.softsquared_baemin">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".config.ApplicationClass"
@@ -16,8 +17,13 @@
         android:networkSecurityConfig="@xml/network_security_config"
         tools:ignore="AllowBackup">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDB-WYmVim_rWuYr6lDGZWhm1AFUjKcc7w"/>
+
 
         <activity android:name=".src.main.MainActivity"/>
+        <activity android:name=".src.main.map.MapActivity"/>
         <activity android:name=".src.main.location.InputLocationActivity"/>
         <activity android:name=".src.main.menuList.MenuListActivity"/>
         <activity android:name=".src.main.myPage.myProfile.MyProfileActivity"/>
