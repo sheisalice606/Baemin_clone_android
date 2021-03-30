@@ -2,9 +2,8 @@ package org.techtown.softsquared_baemin.src.main.location.inputLocation
 
 import com.google.gson.JsonArray
 import com.google.gson.annotations.SerializedName
+import org.json.JSONArray
 
-data class InputLoactionResponse(
-
-        @SerializedName("response") val response: JsonArray
-
+data class InputLocationResponse(
+        @SerializedName("") val result : LocationResult
 )

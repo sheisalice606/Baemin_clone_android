@@ -16,7 +16,6 @@ import org.techtown.softsquared_baemin.config.ApplicationClass.Companion.sign_up
 import org.techtown.softsquared_baemin.config.BaseActivity
 import org.techtown.softsquared_baemin.databinding.ActivitySignUpEmailBinding
 import org.techtown.softsquared_baemin.src.main.MainActivity
-import org.techtown.softsquared_baemin.src.main.myPage.signUp.emailDuplicateModels.EmailDuplicateRequest
 import org.techtown.softsquared_baemin.src.main.myPage.signUp.emailDuplicateModels.EmailDuplicateResponse
 import org.techtown.softsquared_baemin.src.main.myPage.signUp.emailDuplicateModels.EmailDuplicateService
 import org.techtown.softsquared_baemin.src.main.myPage.signUp.emailDuplicateModels.EmailDuplicateView
