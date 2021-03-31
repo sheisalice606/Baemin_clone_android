@@ -23,7 +23,8 @@ class SearchFragment :
         super.onViewCreated(view, savedInstanceState)
 
 
-        
+        /*
+
         SearchWordService(this).trySearchWord()
         // API GET 실시간 검색어
 
@@ -39,6 +40,7 @@ class SearchFragment :
         val searchAdapter = SearchAdapter(this.requireContext(), searchItemList)
         binding.fragmentSearchRecycler.adapter = searchAdapter
 
+         */
 
     }
 
